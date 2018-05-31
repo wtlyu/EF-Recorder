@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigWindow</class>
+ <widget class="QDialog" name="ConfigWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Config</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="title">
+        <string>Settings</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Preference</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Root directory:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_root_dir">
+                 <property name="placeholderText">
+                  <string>Type the root directory here.</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_root_dir">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Search</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>120</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>School:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_school">
+               <property name="placeholderText">
+                <string>Type your school name here.</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>120</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Maximum duration:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTimeEdit" name="timeEdit_max_duration">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumTime">
+                <time>
+                 <hour>1</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                </time>
+               </property>
+               <property name="minimumTime">
+                <time>
+                 <hour>0</hour>
+                 <minute>0</minute>
+                 <second>5</second>
+                </time>
+               </property>
+               <property name="currentSection">
+                <enum>QDateTimeEdit::MinuteSection</enum>
+               </property>
+               <property name="displayFormat">
+                <string>mm:ss</string>
+               </property>
+               <property name="time">
+                <time>
+                 <hour>0</hour>
+                 <minute>0</minute>
+                 <second>5</second>
+                </time>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Video Device</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QComboBox" name="comboBox_video_list">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_video_refresh">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Refresh</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_video_preview">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>320</width>
+                 <height>180</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>320</width>
+                 <height>180</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Audio Device</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QComboBox" name="comboBox_audio_list"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_audio_refresh">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Refresh</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="verticalWidget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QDialogButtonBox" name="buttonBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok|QDialogButtonBox::RestoreDefaults</set>
+        </property>
+        <property name="centerButtons">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>ver. 1.0.180530</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

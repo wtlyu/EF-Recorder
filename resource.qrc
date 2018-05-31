@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>EF-logo.png</file>
+        <file>EF-logo-waiting.png</file>
+        <file>EF-logo-activated.png</file>
+        <file>EF-logo.ico</file>
+    </qresource>
+</RCC>
